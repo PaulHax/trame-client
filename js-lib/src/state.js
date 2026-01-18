@@ -263,7 +263,7 @@ export class State {
       });
     }
 
-    if (this._dirtyKeys.size && !this._client.isBusy()) {
+    if (this._dirtyKeys.size) {
       const waitOn = [];
       const keys = [];
       this._dirtyKeys.forEach((key) => {
