@@ -234,7 +234,7 @@ export class SharedState {
       });
     }
 
-    if (this.dirtyKeys.size && !this.client.isBusy()) {
+    if (this.dirtyKeys.size) {
       const waitOn = [];
       const keys = [];
       this.dirtyKeys.forEach((key) => {
